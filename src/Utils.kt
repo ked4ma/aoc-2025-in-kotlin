@@ -160,3 +160,5 @@ class CumulativeSum2D {
     fun getSumOf(startX: Int, startY: Int, endX: Int, endY: Int): Long =
         data[endY + 1][endX + 1] - data[endY + 1][startX] - data[startY][endX + 1] + data[startY][startX]
 }
+
+const val INT_INF = Int.MAX_VALUE / 2
